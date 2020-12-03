@@ -1,0 +1,119 @@
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
+NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
+"OPTIONAL" in this document are to be interpreted as described in
+RFC 2119.
+
+
+1 Basic Coding Standard
+
+Code MUST follow all rules outlined in PSR-12 unless the rules in PSR-12 conflict with the rules
+in this document. Given that conflict code MUST follow the rules outline in this document.
+
+1.1 General Naming
+
+If any name is an Acronym name it in all caps, e.g: sql folder should be named SQL.
+Python files must use snake_case.
+All other files SHOULD use CamelCase.
+
+1.2 Files
+
+All file and folder names MUST be written in CamelCase.
+PHP files containing a namespace MUST be named after that namespace, PHP files in a folder SHOULD
+have their name space be nested such that the namespace is [Folder]\[FileName].
+CSS files used on one page MUST be named [PageName]Style.css.
+
+1.3 Indenting
+All files MAY use tabs or spaces for indentation.
+If tabs are used they MUST be used only once for each level of indentation.
+If spaces are used:
+CSS files SHOULD use 8 spaces of indentation.
+HTML files SHOULD use 2 spaces of indentation.
+SQL files SHOULD use 8 spaces of indentation.
+PHP files with mostly PHP SHOULD use 8 spaces of indentation.
+PHP files with mostly HTML SHOULD use 2 spaces of indentation.
+indentation.
+All other files SHOULD use 8 spaces of indentation.
+Javascript files SHOULD have curly braces star on the same line as function, class and control words.
+
+1.4 Specific Naming
+Python files MUST use snake_case.
+
+2 PHP style
+2.1 PHP Files General
+
+There SHOULD NOT be more than one namespace definition per file.
+There MAY be more than one class per file.
+Each PHP file that contains classes SHOULD contain classes that all fall within the same purpose.
+PHP Interfaces and classes SHOULD NOT be in the same file.
+declare(strict_types=1) MUST be placed at the top of every PHP file.
+The PHP header (declare, namespace, require, use) SHOULD be in one continuous block with no empty
+lines between them.
+One line PHP sections wrapper in PHP tags SHOULD NOT have a semicolon at the end.
+
+2.2 Naming
+Functions and Methods SHOULD be named as verbs.
+Classes SHOULD be named as singular nouns.
+Interfaces and traits SHOULD be named as adjectives.
+Public attributes and methods MUST be named in CamelCase.
+Private and Protected attributes and methods MUST be named in camelCase.
+ALL_CAPS MUST be used for all constants and global variables.
+Hungarian notation MUST NOT be used.
+The english alphabet MUST only be used in names, no numbers and no symbols.
+In the case of a constructor normal naming rules SHOULD be ignored for the arguments and 
+the name of the argument SHOULD be the name of the attribute within the class.
+PHP flow-control statements (eg: if, while, do, else, for) MUST be in all lowercase.
+
+2.3 Functions/Methods
+
+Function type hints MUST be used for all parameters and return types except the __construct
+method which MUST NOT use type hints for it's return type. Interface method type hints SHOULD be
+used, if ther interface does not use type hints the method implementation MUST NOT use type hints. 
+Type hints for functions that do not return values MUST be void.
+Type hints for duck typed functions MUST be left blank, this SHOULD be the only time there are no
+function type hints.
+Functions SHOULD NOT use the reference operator (&).
+Functions SHOULD follow the single responsibility principle.
+Functions SHOULD NOT have more than 5 local variables.
+Anonymous functions SHOULD have their { on the same line as the function declaration.
+
+2.4 Indenting
+
+There SHOULD NOT be no more than 3 levels of indentation outside of classes.
+There SHOULD NOT be no more than 4 levels of indentation inside of classes.
+
+2.5 Classes
+
+Each class MUST follow the single responsibility principle. 
+Visibility MUST be defined for all attributes and methods.
+There SHOULD be on class (or other oo constrcut, i.e interface) per file.
+
+2.6 Iteration
+
+The type of iteration used SHOULD be chosen from the following list, with precedence given to
+higher places on the list.
+    1. Higher-order functions (map, fitler, reduce)
+    2. Foreach loops
+    3. Recursion
+    4. For loops
+    5. While loops
+    6. Do while loops
+
+2.7 Comments
+
+Comments should come before 
+    1. Files
+    2. Classes
+    3. Functions/Methods
+Comments SHOULD NOT be within Functions/Methods.
+TODO comments MAY be used during development but MUST be deleted upon release.
+Single line comments MUST be written using // and MUST NOT be written using #.
+
+2.8 Includes / Requires / Importing
+
+require_once SHOULD be used for every php import.
+If code is in a namespace, to use global variables code MUST use the line use [variable] and MUST
+NOT have the line \[variable].
+
+2.9 Type casting
+
+Type casting MUST have a space between the type and the variable. E.G (int) $var.

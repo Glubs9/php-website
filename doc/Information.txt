@@ -1,0 +1,9 @@
+Name: Jonte Deakin
+Email: 0726224@schoolsnet.act.edu.au
+Password: Awardspacepassword1
+Url: thisisnotscience.scienceontheweb.net
+
+Database Username: 3637185_collections	
+Database Host: fdb30.awardspace.net:3306
+Database Name: 3637185_Collections
+Database Password: database_password1

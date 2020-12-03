@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#this file used to be more complicated
+php *.php

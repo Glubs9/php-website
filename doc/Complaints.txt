@@ -1,0 +1,26 @@
+This file contains all of the stuff that annoyed me while I coded and felt I needed to write down
+why my code suffered for it.
+This is a nonessential file to read.
+
+
+I would have preffered to have better namespace encapsulation, as it stands now there is only a
+proposal for namespace visibility and so I have to just accept that i will export everything in my
+namespace.
+
+I would really like there to be an array of type for php but i guess i have to suffer.
+
+English uses Review as a noun and a verb which means I use the word review for a method and a class.
+
+I really should have written better oo code. If i had better use of getters setters and visibility
+then I could avoid the situation I am in now where the code is only useable if you have a complete
+understanding on how the dataclasses works.
+
+as an extension on above, if i had written better code I may have been able to write a generic page
+which could be generate d for both collections and items but instead i had to write two different
+pages because i'm bad at coding.
+
+I think that i misused the singleton design pattern. Although it makes sense because of the
+semantics i still ended up just mostly using it for global variables.
+
+I ended up running out of time for proper commenting and css. 
+	(please forgive me if I forgot to delete one of my more frusttrated comments)

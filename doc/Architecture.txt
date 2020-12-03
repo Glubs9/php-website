@@ -1,0 +1,42 @@
+This file describes the general architecture of the software.
+
+doc
+  - the doc folder contains general documentation
+
+src
+  - the src folder contains all of the programming files and image files used in the website.
+  - SQL
+    - the sql folder contains all the sql code used to setup and populate the database
+  - DataClasses
+    - the data class folder contains the api for accessing the database, the code that accesses
+    - the database and the classes used to hold the data taken from the database
+  - CSS
+    - contains all the css files used in the site
+  - HomePage
+    - contains the homepage
+  - index.html
+    - index.html is used to redirect to the homepage when the site is initially loaded
+  - LoginPages
+    - the pages used to login 
+  - Python
+    - all of the python files used for general scripting purposes.
+  - Images
+    - holds all of the images used
+    - The reason the image files are in the src folder is that they have to be used in the website and
+    - the website is ran from the src folder.
+  - PHPIncludes
+    - contains all of the miscellaneous php files.
+  - ReviewPages
+    - contains all of the files used for handling reviews.
+  - ItemPages
+    - contains all of the files used for showing items, collections and clients.
+  - Catalogue
+    - contains all of the files used for showing the catalogue of all the items , users and collections
+
+The recommended reading order for the folders is as follows:
+  1. doc
+  2. SQL //PopulateTables.sql is generated so it is not necersarry to read all of it. note: on my computer i named the databse collections. The database is named differently on awardspace.
+  3. PHPIncludes/ListBind.php //the other files in here are not necersarry
+  4. DataClasses
+  5. All of the other folders as needed
+  6. Python

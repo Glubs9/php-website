@@ -1,0 +1,25 @@
+#navigation_bar {
+	overflow: hidden;
+	border-bottom: 5px solid black;
+	margin-bottom: 10px;
+}
+
+.bar_item {
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	color: black;
+}
+
+#navigation_bar a {
+	float: left;
+}
+
+#user_name {
+	float: right;
+}
+
+#navigation_bar a:visited {
+	color: black;
+}

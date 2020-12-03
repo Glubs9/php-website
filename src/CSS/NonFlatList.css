@@ -1,0 +1,10 @@
+ul.non_flat_list {
+	display: block;
+	list-style-type: initial;
+}
+
+ul.non_flat_list li {
+	display: block;
+	list-style-position: outside;
+	float: none;
+}
